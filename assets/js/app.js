@@ -1,11 +1,13 @@
 'use strict';
+import * as utils from "./utils.js"
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageInput = document.getElementById('message');
-    const errorMessageArea = document.getElementById('errorMessageArea');
+
+utils.listen('DOMContentLoaded', function() {
+    const form = utils.select('contactForm');
+    const nameInput = utils.select('name');
+    const emailInput = utils.select('email');
+    const messageInput = utils.select('message');
+    const errorMessageArea = utils.select('errorMessageArea');
   
     form.addEventListener('submit', function(event) {
       let isValid = true;
