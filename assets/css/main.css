@@ -4,11 +4,14 @@
     --primary-color: #A63A50;
     --font-color: #fff; 
 }
+
+body {
+    font-family: 'Open Sans', ;
+}
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
 }
-
 
 .gap-20 {
     gap: 20px;
@@ -32,7 +35,6 @@
 }
 
 .hero-section {
-    /* background-color: aquamarine; */
     height: 600px;
 }
 
@@ -49,8 +51,9 @@ section {
 
     p {
         flex-wrap: balance;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 12px;
+        font-family: 'Open Sans';
     }
 
     button {
@@ -60,6 +63,11 @@ section {
         background-color: var(--primary-color);
         color: var(--font-color);
         font-weight: 500;
+
+        &:hover {
+            background-color: #5f1c29;
+            transition: background-color 0.25s ease-in-out;
+        }
     }
 }
 
