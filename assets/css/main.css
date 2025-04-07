@@ -49,6 +49,9 @@
 /* - - - - - - - - - - - - - - - Footer - -  - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+footer {
+    margin-top : 80px;
+}
 .footer-left, .footer-right{
     flex-direction: column;
 }
