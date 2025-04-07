@@ -1,0 +1,21 @@
+{
+  "name": "Whiskers Cat Care",
+  "version": "1.0.0",
+  "description": "Whisker Cat Day-care",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "lite-server"
+  },
+
+  "keywords": [
+    "ES",
+    "JS",
+    "Portfolio"
+  ],
+  "author": "Sarah Mitchell, Ashedzi Soloman, Xiyu Zhou",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
