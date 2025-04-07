@@ -8,6 +8,10 @@
     --lighter-primary: #c9e9f6;
 }
 
+* {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
 .container {
     width: min(100% - 30px, 1080px);
 }
@@ -37,10 +41,10 @@ flex-direction: column;
 }
 
 .footer-left {
-
+    border: 2px solid red;
 }
 .footer-right {
-
+    border: 2px solid rgb(128, 192, 128);
 }
 
 /* - - - -  - - - - - - - */
@@ -50,6 +54,7 @@ flex-direction: column;
     background-color: var(--background); 
     text-align: center;
     margin-bottom: 50px;
+    border: 2px solid blue;
   }
   
   .contact-me h3 {
@@ -113,7 +118,7 @@ flex-direction: column;
     border: 1px solid #f08080;
     background-color: #ffe0e0;
     border-radius: 5px;
-    display: none; 
+    /*display: none; add back in after formatting */
   }
   
 /* - - - -  - - - - - - - */
@@ -124,6 +129,7 @@ form {
     width: 40%;
     gap: 10px; 
     height: auto; 
+    border: 2px solid purple;
 }
 
 .form-title {

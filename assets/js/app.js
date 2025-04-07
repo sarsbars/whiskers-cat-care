@@ -9,7 +9,7 @@ utils.listen('DOMContentLoaded', function() {
     const messageInput = utils.select('message');
     const errorMessageArea = utils.select('errorMessageArea');
   
-    form.addEventListener('submit', function(event) {
+    utils.listen('submit', function(event) {
       let isValid = true;
       const errors = []; 
   
@@ -17,8 +17,7 @@ utils.listen('DOMContentLoaded', function() {
         errors.push('Name is required.');
         isValid = false;
       }
-  
-      // Validate Email
+      
       if (emailInput.value.trim() === '') {
         errors.push('Email is required.');
         isValid = false;
