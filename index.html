@@ -19,26 +19,40 @@
 
 
     <footer class="flex align">
-    <div class="google-map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.4900812827673!2d-97.1965126768753!3d49.81445353271439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea756d679c1f21%3A0xd09825e5197c16da!2sManitoba%20Institute%20of%20Trades%20and%20Technology!5e0!3m2!1sen!2sca!4v1738168434780!5m2!1sen!2sca" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-
-    <div class="container flex space-between">
-        <div class="left-footer flex align">
-            <ul class="flex gap-20">
-                <li><a href="#" class="flex center"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" class="flex center"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#" class="flex center"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
+        <section class="contact-me">
+            <div class="container">
+              <h3>Contact Me</h3>
+              <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="someone@email.com" required>
+                <textarea 
+                  placeholder="Don't Be Shy, send me a message" 
+                  rows="5" 
+                  required>
+                </textarea>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </section>
+        <div class="google-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.4900812827673!2d-97.1965126768753!3d49.81445353271439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea756d679c1f21%3A0xd09825e5197c16da!2sManitoba%20Institute%20of%20Trades%20and%20Technology!5e0!3m2!1sen!2sca!4v1738168434780!5m2!1sen!2sca" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </div>
-</footer>
+        <div class="container flex space-between">
+            <div class="left-footer flex align">
+                <ul class="flex gap-20">
+                    <li><a href="#" class="flex center"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" class="flex center"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="flex center"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </html>
