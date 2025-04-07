@@ -2,10 +2,10 @@
 /* - - - - - - - - - - - - - - Main Stylings - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-
 :root { 
-    --background: #000020;
+    --background: #fdfcf5;
     --primary-colour: #87ceeb;
+    --lighter-primary: #c9e9f6;
 }
 
 .container {
@@ -18,7 +18,7 @@
 
 .align {
     align-items: center;
-  }
+}
 
 .center {
     justify-content: center;
@@ -32,10 +32,20 @@
 /* - - - - - - - - - - - - - - - Footer - -  - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/*---------------------------------------------------------------------------*/
-/*----------------------------Contact-Me-------------------------------------*/
-/*---------------------------------------------------------------------------*/
+.footer-left .footer-right{
+flex-direction: column;
+}
 
+.footer-left {
+
+}
+.footer-right {
+
+}
+
+/* - - - -  - - - - - - - */
+/*       Contact Me       */
+/* - - - -- - - - - - - - */
 .contact-me {
     background-color: var(--background); 
     text-align: center;
@@ -94,20 +104,89 @@
       box-shadow: 0 0 20px 5px rgba(244, 244, 244, 0.515); 
     }
   }
+
+  .error-message-area {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f08080;
+    background-color: #ffe0e0;
+    border-radius: 5px;
+    display: none; 
+  }
   
+/* - - - -  - - - - - - - */
+/*         Form           */
+/* - - - -- - - - - - - - */
 
-.footer-left {
-
+form {
+    width: 40%;
+    gap: 10px; 
+    height: auto; 
 }
 
-.footer-right {
-
+.form-title {
+    margin-bottom: 10px;
 }
 
+.form-container {
+    flex: 1;
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+form input[type=text],
+form input[type=email] {
+    margin-top: 3px;
+    width: 100%;
+    height: 46px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    background-color: #fff;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+textarea:focus {
+    border: 1px solid #62adff;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    resize: none;
+}
+
+form input[type=submit] {
+    height: 56px;
+    width: 120px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    background-color: var(--primary-colour);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* - - - -  - - - - - - - */
+/*      Google Map        */
+/* - - - -- - - - - - - - */
 .google-map {
-
+    margin: 0;
+    flex: 1;
+    width: 100%; 
+    max-width: 600px;
+    height: 450px;
 }
 
-.social-links {
 
-}
