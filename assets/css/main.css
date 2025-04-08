@@ -6,7 +6,7 @@
 
 :root { 
     --background: #fdfcf5;
-    --alternate-background: #b0b0b0;
+    --alternate-background: #f5fdfc;
     --lighter-primary: #c9e9f6;
     --primary-color: #A63A50;
     --font-color: #fff; 
@@ -61,10 +61,6 @@ body {
     gap: 80px
 }
 
-.flex {
-    display: flex;
-}
-
 .grid {
     display: grid;
     place-items: center;
@@ -87,6 +83,7 @@ body {
     width: 100%;
     padding-bottom: 40px;
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -338,7 +335,7 @@ form {
 
 form input[type=text],
 form input[type=email] {
-    margin-top: 3px;
+    margin-top: 0;
     width: 100%;
     height: 46px;
     padding: 0 15px;
@@ -369,13 +366,19 @@ textarea {
 form input[type=submit] {
     height: 56px;
     width: 120px;
-    margin-top: 25px;
+    margin-top: 5px;
     font-weight: 500;
     font-size: 1.7rem;
     background-color: #fff;
     color: #000;
     text-transform: uppercase;
     border-radius: 5px;
+}
+
+.form-label {
+    color: #000;
+    margin: 0;
+    text-align: left;
 }
 
 /* - - - -  - - - - - - - */
