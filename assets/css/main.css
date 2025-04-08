@@ -86,6 +86,89 @@ h2, h3 {
     font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
 }
 
+/*---------------------------------------------------------------------------*/
+/*------------------------------Header---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+header {
+    background: #fff;
+  }
+  
+  .title {
+    height: 56px;
+  
+    h1 {
+        position: relative;
+        right: 2px;
+        line-height: 20px;
+        font-size: 1.8rem;
+        color: var(--primary-colour);
+        font-weight: 500;
+        text-transform: uppercase;
+        place-content: center;
+    }
+  
+    .logo {
+        height: 90px;
+        width: 90px;
+    }
+    
+  }
+  
+  nav {
+    width: 100%;
+    height: 56px;
+  }
+  
+  nav .nav-list {
+    list-style: none;
+  }
+  
+  nav .nav-list li {
+    display: inline;
+    line-height: 56px;
+  
+    a {
+        text-decoration: none;
+        color: #525252;
+        font-size: 1.6rem;
+        font-weight: 500;
+    
+        &:hover {
+            color: var(--primary-colour);
+            transition: color 0.25s ease-in-out;
+        }
+    }
+  }
+  
+  .nav-list li + li {
+    margin-left: 16px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    height: 38px;
+    padding: 0 15px 0 32px;
+    /* border: 1px solid rgb(0 0 0 / 5%); */
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    background: #f6f6f6 url(../img/image4.png) no-repeat 10px 11px;
+    background-size: 16px;
+  
+    &:focus {
+        border: 1px solid var(--primary-colour);
+    }
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    color: #000;
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+  
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
