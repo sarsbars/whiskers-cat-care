@@ -222,17 +222,17 @@ section:nth-of-type(2 ) {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-.footer-left, .footer-right{
+.contact-left, .contact-right{
     flex-direction: column;
     margin-top: 80px;
 }
 
-.footer-left {
+.contact-left {
     border: 2px solid red;
 }
 
-.footer-right {
-    border: 2px solid rgb(128, 192, 128);
+.contact-right {
+    align-items: center;
 }
 
 /* - - - -  - - - - - - - */
@@ -402,6 +402,86 @@ i {
     max-width: 600px;
     height: 450px;
 }
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------Footer---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+footer {
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+
+  .left-footer ul li{
+      display: inline;
+
+      a {
+          text-decoration: none;
+          height: 40px;
+          width: 40px;
+          padding: 5px;
+          border-radius: 50%;
+          font-size: 1.6rem;
+          background-color: rgb(255 255 255 / 10%);
+          backdrop-filter: blur(100px) saturate(140%);
+          height: 30px;
+          width: 30px;
+          border: 1px solid #dcdcdc;
+          position: relative;
+          right: 2px;
+
+          i {
+              color: #fff;
+          }
+
+          &:hover {
+              background-color: #672C36;
+              transition: color 0.25s ease-in-out;
+          }
+      }
+  }
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------Footer---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+footer {
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+  
+    .left-footer ul li{
+        display: inline;
+  
+        a {
+            text-decoration: none;
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 1.6rem;
+            background-color: rgb(255 255 255 / 10%);
+            backdrop-filter: blur(100px) saturate(140%);
+            height: 30px;
+            width: 30px;
+            border: 1px solid #dcdcdc;
+            position: relative;
+            right: 2px;
+  
+            i {
+                color: #fff;
+            }
+  
+            &:hover {
+                background-color: #672C36;
+                transition: color 0.25s ease-in-out;
+            }
+        }
+    }
+  }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
