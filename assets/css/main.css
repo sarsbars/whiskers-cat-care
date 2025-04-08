@@ -13,14 +13,12 @@
 } 
  
 * {
-    font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
     color: #333;
     background-color: var(--background);
     margin: 0;
@@ -84,6 +82,13 @@ body {
     padding-bottom: 40px;
 }
 
+h2, h3 {
+    font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Open Sans';
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
