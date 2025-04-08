@@ -136,12 +136,10 @@ section {
     }
 }
 
-.about-us-pic {
-    height: 400px;
-    width: 50%;
-    border-top-right-radius: 90%;
-    border-top-left-radius: 90%;
-    background: #fff url(../img/about-us\ cat.jpg) center center / cover no-repeat;
+.content {
+    figure {
+        width: 60%;
+    }
 }
 
 h3 {
