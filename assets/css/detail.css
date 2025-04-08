@@ -5,6 +5,10 @@
     margin-inline: auto;
 }
 
+main {
+    position: absolute;
+}
+
 :root { 
     --background: #fdfcf5;
     --alternate-background: #F1EEEF;
@@ -66,3 +70,38 @@ section {
 .daycare-service {
     width: 50%;
 }
+
+figure {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 70%;
+}
+
+h2 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.daycare-service {
+    p, button {
+        margin-top: 12px;
+    }
+
+    button {
+        padding: 16px 24px;
+        border-radius: 50px;
+        width: 60%;
+        background-color: var(--primary-color);
+        color: var(--font-color);
+        font-weight: 500;
+
+        &:hover {
+            background-color: #5f1c29;
+            transition: background-color 0.25s ease-in-out;
+    }
+ }
