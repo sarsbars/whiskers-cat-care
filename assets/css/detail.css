@@ -54,6 +54,14 @@ section {
     gap: 80px
 }
 
+.gap-160 {
+    gap: 120px;
+}
+
+.column {
+    flex-direction: column;
+}
+
 .grid {
     display: grid;
     place-items: center;
@@ -68,11 +76,12 @@ section {
 }
 
 .daycare-service {
-    width: 50%;
+    width: 40%;
 }
 
 figure {
     position: fixed;
+    left: 1020px;
     bottom: 0;
     z-index: -1;
     width: 70%;
@@ -81,10 +90,12 @@ figure {
 h2 {
     font-size: 3.8rem;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .bold {
     font-weight: 700;
+    font-style: italic;
 }
 
 .daycare-service {
@@ -92,16 +103,38 @@ h2 {
         margin-top: 12px;
     }
 
-    button {
+    .primary, .secondary {
         padding: 16px 24px;
-        border-radius: 50px;
-        width: 60%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .primary {
         background-color: var(--primary-color);
         color: var(--font-color);
         font-weight: 500;
-
+    
         &:hover {
             background-color: #5f1c29;
             transition: background-color 0.25s ease-in-out;
+        }
     }
- }
+    
+    .secondary {
+        border: 1px solid var(--primary-color);
+        background-color: var(--background);
+        color: var(--primary-color);
+    
+        &:hover {
+            background-color: #f5f4ef;
+            transition: background-color 0.25s ease-in-out;
+        }
+    }
+}
+
+
+.daycare-prices {
+    div + div {
+        margin-top: 20px;
+    }
+}
