@@ -25,7 +25,7 @@ body {
     background-color: var(--background);
     margin: 0;
     padding: 0;
-  }
+}
 
 .container {
     width: min(100% - 30px, 1080px);
@@ -43,7 +43,6 @@ body {
 
 .center {
     justify-content: center;
-    justify-items: center;
 }
 
 .space-between {
@@ -83,6 +82,11 @@ body {
     height: 600px;
 }
 
+.alternate-background {
+    background-color: var(--alternate-background);
+    width: 100%;
+    padding-bottom: 40px;
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -160,14 +164,6 @@ section:nth-of-type(2 ) {
 /* - - - - - - - - - - Xiyu's Services Section - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-  
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-  
   main h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -176,6 +172,8 @@ section:nth-of-type(2 ) {
 
   .services-title {
     flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
   }
   
   main > p {
@@ -191,6 +189,7 @@ section:nth-of-type(2 ) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
+    padding-bottom: 60px;
   }
   
   .xiyu-container section {
@@ -211,20 +210,20 @@ section:nth-of-type(2 ) {
   }
   
   .xiyu-container section h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
 }
   
   .xiyu-container section p {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #666;
 }
   
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - Footer - -  - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - Contact and Google Maps - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
