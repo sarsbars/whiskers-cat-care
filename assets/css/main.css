@@ -6,14 +6,13 @@
 
 :root { 
     --background: #fdfcf5;
-    --alternate-background: #b0b0b0;
+    --alternate-background: #F1EEEF;
     --lighter-primary: #c9e9f6;
     --primary-color: #A63A50;
     --font-color: #fff; 
 } 
  
 * {
-    font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
