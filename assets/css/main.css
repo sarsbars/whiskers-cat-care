@@ -285,20 +285,20 @@ section:nth-of-type(2 ) {
     resize: none; 
   }
   
-  .contact-me button {
-    padding: 12px 32px;
-    background-color: transparent; 
-    color: #000;
-    border:solid #000;
-    border-radius: 30px; 
-    font-size: 1.2rem;
-    cursor: pointer;
-    max-width: 180px;
-    margin: auto;
+  .send-message {
+    padding: 16px 24px;
+    border-radius: 50px;
+    width: 300px;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-weight: 500;
+
     &:hover {
-      box-shadow: 0 0 20px 5px rgba(244, 244, 244, 0.515); 
+        background-color: #5f1c29;
+        transition: background-color 0.25s ease-in-out;
     }
-  }
+}
 
   .error-message-area {
     color: red;
@@ -366,19 +366,6 @@ textarea {
     text-align: left;
 }
 
-button {
-    padding: 16px 24px;
-    border-radius: 50px;
-    margin-top: 50px;
-    background-color: var(--primary-color);
-    color: var(--font-color);
-    font-weight: 500;
-
-    &:hover {
-        background-color: #5f1c29;
-        transition: background-color 0.25s ease-in-out;
-    }
-}
 /* - - - -  - - - - - - - */
 /*      Google Map        */
 /* - - - -- - - - - - - - */
