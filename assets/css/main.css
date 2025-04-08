@@ -17,6 +17,14 @@ body {
     gap: 20px;
 }
 
+.gap-40 {
+    gap: 40px
+}
+
+.gap-80 {
+    gap: 80px
+}
+
 .flex {
     display: flex;
 }
@@ -80,4 +88,30 @@ section {
         width: 100%;
         object-fit: cover;
     }
+}
+
+.about-us-pic {
+    height: 400px;
+    width: 50%;
+    border-top-right-radius: 90%;
+    border-top-left-radius: 90%;
+    background: #fff url(../img/about-us\ cat.jpg) center center / cover no-repeat;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.content {
+    p {
+        font-size: 1.9rem;
+    }
+}
+
+section:nth-of-type(2 ) {
+    padding-top: 40px;
 }
