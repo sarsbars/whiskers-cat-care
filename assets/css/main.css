@@ -72,9 +72,7 @@ body {
     align-items: center;
 }
 
-.hero-section {
-    height: 600px;
-}
+
 
 .alternate-background {
     background-color: var(--alternate-background);
@@ -172,6 +170,9 @@ section {
     padding-bottom: 20px;
 }
 
+.hero-section {
+    height: 500px;
+}
 .hero-text {
     h2 {
         font-size: 8rem;
@@ -203,7 +204,7 @@ section {
 .hero-image {
     height: auto;
     width: 50%;
-    
+   
     img {
         height: auto;
         width: 100%;
