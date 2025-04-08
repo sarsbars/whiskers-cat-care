@@ -1,4 +1,33 @@
+<<<<<<< HEAD
 @charset "utf-8";
+=======
+@charset "utf=8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - Main Stylings - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root { 
+    --background: #fdfcf5;
+    --primary-colour: #87ceeb;
+    --lighter-primary: #c9e9f6;
+} 
+ 
+* {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #8eeaf6;
+    margin: 0;
+    padding: 0;
+  }
+>>>>>>> main
 
 :root {
     --primary-color: #A63A50;
@@ -10,14 +39,38 @@ body {
 }
 .container {
     width: min(100% - 30px, 1080px);
+<<<<<<< HEAD
     margin-inline: auto;
 }
 
+=======
+    padding: 0 15px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+>>>>>>> main
 .gap-20 {
     gap: 20px;
 }
 
 .gap-40 {
+<<<<<<< HEAD
     gap: 40px
 }
 
@@ -115,3 +168,254 @@ h3 {
 section:nth-of-type(2 ) {
     padding-top: 40px;
 }
+=======
+    gap: 40px;
+}
+
+.gap-80 {
+    gap: 80px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - Xiyu's Services Section - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  main > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+  }
+  
+  .xiyu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .xiyu-container section {
+    flex: 0 1 220px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .xiyu-container section img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .xiyu-container section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .xiyu-container section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - Footer - -  - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.footer-left, .footer-right{
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.footer-left {
+    border: 2px solid red;
+}
+.footer-right {
+    border: 2px solid rgb(128, 192, 128);
+}
+
+/* - - - -  - - - - - - - */
+/*       Contact Me       */
+/* - - - -- - - - - - - - */
+.contact-me {
+    background-color: var(--background); 
+    text-align: center;
+    margin-bottom: 50px;
+    border: 2px solid blue;
+    flex-direction: column;
+    width : 500px;
+  }
+  
+  .contact-me h3 {
+    color: #000;
+    font-size: 3.5rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .contact-me form {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 0 20px;
+  }
+  
+  .contact-me input,
+  .contact-me textarea {
+    padding: 15px;
+    border-radius: var(--border-radius); 
+    border: 2px solid var(--border-color); 
+    color: #000; 
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-me input:focus,
+  .contact-me textarea:focus {
+    border-color: var(--primary-colour); 
+    box-shadow: 0 0 10px rgba(143, 112, 227, 0.5); 
+    outline: none; 
+  }
+  
+  .contact-me textarea {
+    resize: none; 
+  }
+  
+  .contact-me button {
+    padding: 12px 32px;
+    background-color: transparent; 
+    color: #000;
+    border:solid #000;
+    border-radius: 30px; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    max-width: 180px;
+    margin: auto;
+    &:hover {
+      box-shadow: 0 0 20px 5px rgba(244, 244, 244, 0.515); 
+    }
+  }
+
+  .error-message-area {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f08080;
+    background-color: #ffe0e0;
+    border-radius: 5px;
+    /*display: none; add back in after formatting */
+  }
+  
+/* - - - -  - - - - - - - */
+/*         Form           */
+/* - - - -- - - - - - - - */
+
+form {
+    gap: 10px; 
+    height: auto; 
+    border: 2px solid purple;
+}
+
+.form-title {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+form input[type=text],
+form input[type=email] {
+    margin-top: 3px;
+    width: 100%;
+    height: 46px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    background-color: #fff;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+textarea:focus {
+    border: 1px solid #62adff;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid hsl(60, 81%, 58%);
+    resize: none;
+}
+
+form input[type=submit] {
+    height: 56px;
+    width: 120px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* - - - -  - - - - - - - */
+/*      Social Links      */
+/* - - - -- - - - - - - - */
+
+.social-links {
+    height: 50px;
+    font-size: 4rem;
+}
+
+/* - - - -  - - - - - - - */
+/*      Google Map        */
+/* - - - -- - - - - - - - */
+.google-map {
+    margin: 0;
+    flex: 1;
+    width: 100%; 
+    max-width: 600px;
+    height: 450px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+>>>>>>> main
