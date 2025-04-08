@@ -313,7 +313,7 @@ section:nth-of-type(2 ) {
     border: 1px solid #f08080;
     background-color: #ffe0e0;
     border-radius: 5px;
-    /*display: none; add back in after formatting */
+    display: none; 
 }
   
 /* - - - -  - - - - - - - */
@@ -323,7 +323,6 @@ section:nth-of-type(2 ) {
 form {
     gap: 10px; 
     height: auto; 
-    border: 2px solid purple;
 }
 
 .form-title {
@@ -386,6 +385,10 @@ form input[type=submit] {
 .social-links {
     height: 50px;
     font-size: 4rem;
+}
+
+i {
+    color: var(--primary-color);
 }
 
 /* - - - -  - - - - - - - */
