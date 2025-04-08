@@ -86,9 +86,6 @@ h2, h3 {
     font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
 }
 
-p {
-    font-family: 'Open Sans';
-}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -100,7 +97,6 @@ section {
     h2 {
         font-size: 8rem;
         line-height: 1.2;
-        font-family: 'Bubblegum Sans';
     }
 
     p {
