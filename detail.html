@@ -14,11 +14,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
         <link rel="stylesheet" href="./assets/css/detail.css" media="all" >
+        <link rel="stylesheet" href="./assets/css/header-footer.css" media="all" >
         <script src="./assets/js/app.js" type="module"></script>
     </head>
   <body>
     <header>
-    </header>
+      <div class="container flex space-between">
+          <div class="flex gap-40">
+              <div class="title flex">
+                  <div class="logo"><img src="./assets/img/logo1.png"></div>
+              </div>
+              <nav>
+                  <ul class="nav-list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">Boarding</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Training</a></li>
+                      <li><a href="#">Contact us</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="flex center search-bar">
+              <input type="text" placeholder="Search">
+          </div>
+      </div>
+  </header>
     <main>
       <div class="container">
         <section class="flex gap-160 align-center">
@@ -62,6 +82,16 @@
       </figure>
     </main>
   </body>
-  <footer>
-  </footer>
+  <footer class="flex align">
+    <div class="container flex space-between">
+        <p>2025 &copy; Whiskers</p>
+        <div class="left-footer flex align">
+            <ul class="flex gap-20">
+                <li><a href="#" class="flex center"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="flex center"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="flex center"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </html>
