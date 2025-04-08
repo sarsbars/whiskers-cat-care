@@ -2,6 +2,13 @@
 
 This is the website for Whiskers Cat Care, a daycare, boarding and grooming 
 facility for all kinds of felines! This was the final project for Tools and 
+Automation in Software Development. 
+
+### Authors
+
+Sarah Mitchell - team leader, header, footer, contact-us section
+Ashedzi Solomon - hero-banner, about-section, details page
+Xiyu Zhou - Four services 
 
 ![Example of Website](./assets/img/example.png)
 
