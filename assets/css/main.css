@@ -85,14 +85,14 @@ body {
     color: #555;
   }
   
-  .container {
+  .xiyu-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
   }
   
-  .container section {
+  .xiyu-container section {
     flex: 0 1 220px;
     background-color: #fff;
     border-radius: 8px;
@@ -101,7 +101,7 @@ body {
     text-align: center;
   }
   
-  .container section img {
+  .xiyu-container section img {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -109,13 +109,13 @@ body {
     margin-bottom: 15px;
   }
   
-  .container section h2 {
+  .xiyu-container section h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
   }
   
-  .container section p {
+  .xiyu-container section p {
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
@@ -125,11 +125,10 @@ body {
 /* - - - - - - - - - - - - - - - Footer - -  - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-footer {
-    margin-top : 80px;
-}
+
 .footer-left, .footer-right{
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .footer-left {
@@ -147,6 +146,7 @@ footer {
     text-align: center;
     margin-bottom: 50px;
     border: 2px solid blue;
+    flex-direction: column;
     width : 500px;
   }
   
@@ -218,7 +218,6 @@ footer {
 /* - - - -- - - - - - - - */
 
 form {
-    width: 40%;
     gap: 10px; 
     height: auto; 
     border: 2px solid purple;
@@ -302,8 +301,3 @@ form input[type=submit] {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-@media (max-width: 768px) {
-    .container section {
-      flex: 1 1 100%;
-    }
-  }
