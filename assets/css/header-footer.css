@@ -94,7 +94,6 @@ header {
 footer {
     height: 60px;
     line-height: 2;
-    background-color: var(--background);
     color: #000;
   
     .left-footer ul li{
@@ -127,8 +126,12 @@ footer {
         }
     }
   }
-
-
+regular-footer {
+  background-color: var(--background);
+}
+  transparent-footer {
+    background-color: transparent;
+  }
 /* --------------------media-queries--------------- */
 
 /*768px and down*/
