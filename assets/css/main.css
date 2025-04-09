@@ -299,7 +299,6 @@ section:nth-of-type(2 ) {
     border-radius: 50px;
     width: 300px;
     margin-top: 50px;
-    margin-left: 50px;
     background-color: var(--primary-color);
     color: var(--font-color);
     font-weight: 500;
@@ -496,6 +495,11 @@ footer {
     .hero-section {
         height: auto;
     }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 /*480px and down*/
@@ -568,4 +572,11 @@ footer {
     .contact-container {
         flex-direction: column;
     }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+      }
 }
+
+
