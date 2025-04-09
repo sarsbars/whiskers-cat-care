@@ -5,10 +5,6 @@
     margin-inline: auto;
 }
 
-main {
-    position: absolute;
-}
-
 :root { 
     --background: #fdfcf5;
     --alternate-background: #F1EEEF;
@@ -23,7 +19,7 @@ body {
 }
 
 section {
-    height: 100dvh;
+    min-height: calc(100dvh - 60px - 56px);
 }
 
 .flex {
@@ -54,10 +50,6 @@ section {
     gap: 80px
 }
 
-.gap-160 {
-    gap: 120px;
-}
-
 .column {
     flex-direction: column;
 }
@@ -75,14 +67,10 @@ section {
     align-items: center;
 }
 
-.daycare-service {
-    width: 40%;
-}
-
 figure {
     position: fixed;
-    left: 1020px;
-    bottom: 0;
+    left: 980px;
+    bottom: -40px;
     z-index: -1;
     width: 70%;
 }
@@ -99,6 +87,8 @@ h2 {
 }
 
 .daycare-service {
+    width: 100%;
+
     p, button {
         margin-top: 12px;
     }
@@ -132,9 +122,47 @@ h2 {
     }
 }
 
-
 .daycare-prices {
+    width: 100%;
+
     div + div {
         margin-top: 20px;
     }
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 1200px and down*/
+@media (max-width: 1200px) {
+    figure {
+        left: 900px;
+    }
+} 
+
+/*992px and down*/
+@media (max-width: 992px) {
+    figure {
+        left: 700px;
+    }
+}
+
+/*768px and down*/
+@media (max-width: 768px) {
+    figure {
+        left: 500px;
+    }
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+    figure {
+        left: 300px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
