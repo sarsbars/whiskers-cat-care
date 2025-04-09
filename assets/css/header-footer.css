@@ -118,3 +118,21 @@ footer {
         }
     }
   }
+
+
+/* --------------------media-queries--------------- */
+
+/*480px and down*/
+@media (max-width: 480px) {
+  /*for the header*/
+  nav {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+
+  .search-bar {
+      display: none;
+  }
+}
