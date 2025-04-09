@@ -27,7 +27,6 @@ body {
 
 .container {
     width: min(100% - 30px, 1080px);
-    padding: 0 15px;
     margin-inline: auto;
 }
 
@@ -72,10 +71,6 @@ body {
     align-items: center;
 }
 
-.hero-section {
-    height: 600px;
-}
-
 .alternate-background {
     background-color: var(--alternate-background);
     width: 100%;
@@ -86,9 +81,7 @@ h2, h3 {
     font-family: 'Bubblegum Sans', Arial, Helvetica, sans-serif;
 }
 
-p {
-    font-family: 'Open Sans';
-}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - Ashedzi's hero-banner and about section - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -96,18 +89,21 @@ section {
     padding-bottom: 20px;
 }
 
+.hero-section {
+    height: 500px;
+}
+
 .hero-text {
     h2 {
         font-size: 8rem;
         line-height: 1.2;
-        font-family: 'Bubblegum Sans';
     }
 
     p {
         flex-wrap: balance;
         font-size: 1.8rem;
         margin-top: 12px;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans','Inter', Arial, Helvetica, sans-serif;
     }
 
     button {
@@ -126,14 +122,20 @@ section {
 }
 
 .hero-image {
-    height: auto;
-    width: 50%;
-    
+    height: 522px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+   
     img {
         height: auto;
         width: 100%;
         object-fit: cover;
     }
+}
+
+.hero-image1 {
+    display: none;
 }
 
 .content {
@@ -147,7 +149,7 @@ h3 {
 }
 
 .about-content {
-    width: 50%;
+    width: 60%;
 }
 
 .content {
@@ -174,6 +176,10 @@ section:nth-of-type(2 ) {
     flex-direction: column;
     margin-top: 80px;
     align-items: center;
+
+    h3 {
+        text-align: center;
+    }
   }
   
   main > p {
@@ -197,7 +203,6 @@ section:nth-of-type(2 ) {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
@@ -220,23 +225,26 @@ section:nth-of-type(2 ) {
     line-height: 1.6;
     color: #666;
 }
-  
+
+.pic-1, .pic-2, .pic-3 {
+    margin-left: 10px;
+}
+
+.pic-4 {
+    margin-left: 20px;
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - Contact and Google Maps - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-.footer-left, .footer-right{
+.contact-left, .contact-right{
     flex-direction: column;
     margin-top: 80px;
 }
-
-.footer-left {
-    border: 2px solid red;
-}
-
-.footer-right {
-    border: 2px solid rgb(128, 192, 128);
+.contact-right {
+    align-items: center;
+    width: 100%;
 }
 
 /* - - - -  - - - - - - - */
@@ -244,12 +252,10 @@ section:nth-of-type(2 ) {
 /* - - - -- - - - - - - - */
 
 .contact-me {
-    background-color: var(--background); 
     text-align: center;
     margin-bottom: 50px;
-    border: 2px solid blue;
     flex-direction: column;
-    width : 500px;
+    width : 100%;
   }
   
   .contact-me h3 {
@@ -259,8 +265,7 @@ section:nth-of-type(2 ) {
   }
   
   .contact-me form {
-    max-width: 700px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -289,32 +294,32 @@ section:nth-of-type(2 ) {
     resize: none; 
   }
   
-  .contact-me button {
-    padding: 12px 32px;
-    background-color: transparent; 
-    color: #000;
-    border:solid #000;
-    border-radius: 30px; 
-    font-size: 1.2rem;
-    cursor: pointer;
-    max-width: 180px;
-    margin: auto;
+  .send-message {
+    padding: 16px 24px;
+    border-radius: 50px;
+    width: 300px;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-weight: 500;
+
     &:hover {
-      box-shadow: 0 0 20px 5px rgba(244, 244, 244, 0.515); 
+        background-color: #5f1c29;
+        transition: background-color 0.25s ease-in-out;
     }
-  }
+}
 
   .error-message-area {
     color: red;
     font-size: 0.9em;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #f08080;
     background-color: #ffe0e0;
     border-radius: 5px;
     display: none; 
 }
   
+
 /* - - - -  - - - - - - - */
 /*         Form           */
 /* - - - -- - - - - - - - */
@@ -322,6 +327,7 @@ section:nth-of-type(2 ) {
 form {
     gap: 10px; 
     height: auto; 
+    width: 40%;
 }
 
 .form-title {
@@ -345,7 +351,6 @@ form input[type=email] {
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
     background-color: #fff;
-    margin-bottom: 15px;
     background: #fff;
 }
 
@@ -361,20 +366,7 @@ textarea {
     padding: 10px;
     background-color: #fff;
     border-radius: 5px;
-    border: 1px solid hsl(60, 81%, 58%);
     resize: none;
-}
-
-form input[type=submit] {
-    height: 56px;
-    width: 120px;
-    margin-top: 5px;
-    font-weight: 500;
-    font-size: 1.7rem;
-    background-color: #fff;
-    color: #000;
-    text-transform: uppercase;
-    border-radius: 5px;
 }
 
 .form-label {
@@ -383,17 +375,17 @@ form input[type=submit] {
     text-align: left;
 }
 
-/* - - - -  - - - - - - - */
-/*      Social Links      */
-/* - - - -- - - - - - - - */
+form input[type=button] {
+    padding: 16px 24px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-weight: 500;
 
-.social-links {
-    height: 50px;
-    font-size: 4rem;
-}
-
-i {
-    color: var(--primary-color);
+    &:hover {
+        background-color: #5f1c29;
+        transition: background-color 0.25s ease-in-out;
+    }
 }
 
 /* - - - -  - - - - - - - */
@@ -403,12 +395,157 @@ i {
     margin: 0;
     flex: 1;
     width: 100%; 
-    max-width: 600px;
     height: 450px;
 }
 
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------Footer---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+footer {
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+
+  .left-footer ul li{
+      display: inline;
+
+      a {
+          text-decoration: none;
+          height: 40px;
+          width: 40px;
+          padding: 5px;
+          border-radius: 50%;
+          font-size: 1.6rem;
+          background-color: rgb(255 255 255 / 10%);
+          backdrop-filter: blur(100px) saturate(140%);
+          height: 30px;
+          width: 30px;
+          border: 1px solid #dcdcdc;
+          position: relative;
+          right: 2px;
+
+          i {
+              color: #fff;
+          }
+
+          &:hover {
+              background-color: #672C36;
+              transition: color 0.25s ease-in-out;
+          }
+      }
+  }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+/* 1200px and down*/
+@media (max-width: 1200px) {
 
+} 
+
+/*992px and down*/
+@media (max-width: 992px) {
+    .hero-text {
+
+        h2 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+/*768px and down*/
+@media (max-width: 768px) {
+    .hero-text {
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .hero-section {
+        height: auto;
+    }
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+
+        h2 {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        button {
+            margin-top: 20px;
+            font-size: 1.4rem;
+        }
+    }
+
+    .hero-content, .content {
+        flex-direction: column;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image1 {
+        height: 300px;
+        width: 200px;
+        padding: 10px;
+
+        display: grid;
+        place-items: center;
+       
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .about-content {
+        width: 100%;
+
+        h3 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}

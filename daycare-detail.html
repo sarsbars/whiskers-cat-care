@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sarah Mitchell, Ashedzi Soloman and Xiyu Zhou">
+        <meta name="description" content="Kitty Day Care, Boarding and Grooming">
+        <meta name="keywords" content="web development, html, css, javascript, winnipeg, canada">
+        <title>Whiskers</title>
+        <link rel="icon" href="./assets/img/caticon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/daycare-detail.css" media="all" >
+        <link rel="stylesheet" href="./assets/css/header-footer.css" media="all" >
+        <script src="./assets/js/app.js" type="module"></script>
+    </head>
+  <body>
+    <header>
+      <div class="container flex space-between">
+          <div class="flex gap-40">
+              <div class="title flex">
+                  <div class="logo"><img src="./assets/img/logo1.png"></div>
+              </div>
+              <nav>
+                  <ul class="nav-list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">Boarding</a></li>
+                      <li><a href="#">Grooming</a></li>
+                      <li><a href="#">Training</a></li>
+                      <li><a href="#">Contact us</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="flex center search-bar">
+              <input type="text" placeholder="Search">
+          </div>
+      </div>
+  </header>
+    <main>
+      <div class="container">
+        <section class="flex gap-80 align-center">
+          <div class="daycare-service">
+            <h2>Cat Daycare</h2>
+            <p>
+              You can trust Whiskers to give your feline friend the love, comfort, and care they 
+              deserve while you're away. Our cozy, cat-friendly space is supervised by experienced 
+              staff who understand every whisker twitch and tail flick.
+            </p>
+            <p class="bold">
+              All cats must complete a FREE 2-hour temperament check before joining daycare.
+            </p>
+            <button class="primary">Book temperament check</button>
+            <p>
+              If your cat has already passed their check, simply create an account to register for daycare.
+            </p>
+            <button class="secondary">Create account</button>
+          </div>
+          <div class="daycare-prices flex column gap-20">
+            <div>
+              <h3>Full Day | $40</h3>
+              <p>Up to 8 hours of play, rest, and personalized attention.</p>
+              <p>Each additional cat from the same household is $25.</p>
+            </div>
+            <div>
+              <h3>Half Day | $25</h3>
+              <p>Up to 4 hours. Perfect for mid-day socialization or naps in our window spots.</p>
+              <p>Additional cats: $18 each.</p>
+            </div>
+            <div>
+              <h3>Catnap Drop-In | $15</h3>
+              <p>Roughly 2 hours. Great for short errands or quick care.</p>
+              <p>Additional cats: $11 each.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <figure>
+        <img src="./assets/img/details-cat.png">
+      </figure>
+    </main>
+  </body>
+  <footer class="flex align">
+    <div class="container flex space-between">
+        <p>2025 &copy; Whiskers</p>
+        <div class="left-footer flex align">
+            <ul class="flex gap-20">
+                <li><a href="#" class="flex center"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="flex center"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="flex center"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,162 @@
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------Header---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+header {
+    background: var(--background);
+    margin: auto;
+  }
+
+.hamburger {
+    font-size: 24px;
+    color: #000;
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+  
+  .title {
+    height: 56px;
+  
+    h1 {
+        position: relative;
+        right: 2px;
+        line-height: 20px;
+        font-size: 1.8rem;
+        color: var(--primary-colour);
+        font-weight: 500;
+        text-transform: uppercase;
+        place-content: center;
+    }
+  
+    .logo {
+        height: 60px;
+        width: 60px;
+        padding-top: 5px;
+        margin-right: 30px;
+    }
+  }
+  
+  nav {
+    width: 100%;
+    height: 56px;
+  }
+  
+  nav .nav-list {
+    list-style: none;
+  }
+  
+  nav .nav-list li {
+    display: inline;
+    line-height: 56px;
+  
+    a {
+        text-decoration: none;
+        color: #525252;
+        font-size: 1.6rem;
+        font-weight: 500;
+    
+        &:hover {
+            color: var(--primary-colour);
+            transition: color 0.25s ease-in-out;
+        }
+    }
+  }
+  
+  .nav-list li + li {
+    margin-left: 16px;
+  }
+  
+  .search-bar {
+    align-items: center;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    height: 38px;
+    padding: 0 15px 0 32px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    background: #f6f6f6 url(../img/image4.png) no-repeat 10px 11px;
+    background-size: 16px;
+  
+    &:focus {
+        border: 1px solid var(--primary-colour);
+    }
+  }
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------Footer---------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+footer {
+    height: 60px;
+    line-height: 2;
+    background-color: var(--background);
+    color: #000;
+  
+    .left-footer ul li{
+        display: inline;
+  
+        a {
+            text-decoration: none;
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 1.6rem;
+            background-color: rgb(255 255 255 / 10%);
+            backdrop-filter: blur(100px) saturate(140%);
+            height: 30px;
+            width: 30px;
+            border: 1px solid #dcdcdc;
+            position: relative;
+            right: 2px;
+  
+            i {
+                color: #000;
+                line-height: 1.2;
+            }
+  
+            &:hover {
+                background-color: var(--primary-colour);
+                transition: color 0.25s ease-in-out;
+            }
+        }
+    }
+  }
+
+
+/* --------------------media-queries--------------- */
+
+/*768px and down*/
+@media (max-width: 768px) {
+    /*for the header*/
+    nav {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+
+  .search-bar {
+      display: none;
+  }
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+  /*for the header*/
+  nav {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+
+  .search-bar {
+      display: none;
+  }
+}
