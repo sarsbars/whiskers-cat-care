@@ -93,6 +93,7 @@ section {
 .hero-section {
     height: 500px;
 }
+
 .hero-text {
     h2 {
         font-size: 8rem;
@@ -103,7 +104,7 @@ section {
         flex-wrap: balance;
         font-size: 1.8rem;
         margin-top: 12px;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans','Inter', Arial, Helvetica, sans-serif;
     }
 
     button {
@@ -419,5 +420,34 @@ footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*1200px and down*/
+@media (max-width: 1200px) {
+
+}
+
+/*992px and down*/
+@media (max-width: 992px) {
+  .hero-text {
+    h2 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+  }
+}
+
+/*768px and down*/
+@media (max-width: 768px) {
+
+
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+
+}
 
 
