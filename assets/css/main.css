@@ -123,15 +123,20 @@ section {
 }
 
 .hero-image {
-    height: auto;
-    width: 50%;
+    height: 522px;
     padding: 10px;
+    display: grid;
+    place-items: center;
    
     img {
         height: auto;
         width: 100%;
         object-fit: cover;
     }
+}
+
+.hero-image1 {
+    display: none;
 }
 
 .content {
@@ -421,49 +426,99 @@ footer {
 /* - - - - - - - - - - - - - - - Media Queries - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/*1200px and down*/
+/* 1200px and down*/
 @media (max-width: 1200px) {
 
-}
+} 
 
 /*992px and down*/
 @media (max-width: 992px) {
-  .hero-text {
-    width: 50%;
+    .hero-text {
 
-    h2 {
-        font-size: 6rem;
-    }
+        h2 {
+            font-size: 6rem;
+        }
 
-    p {
-        font-size: 1.6rem;
+        p {
+            font-size: 1.6rem;
+        }
     }
-  }
-
-  .hero-image {
-    height: 522px;
-    width: 350px;
-    padding: 10px;
-   
-    img {
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-    }
-}
 }
 
 /*768px and down*/
 @media (max-width: 768px) {
     .hero-text {
-        width: 40%;
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
     }
 
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image1 {
+        visibility: visible;
+    }
+
+    .hero-image1 {
+        height: 300px;
+        width: 150px;
+        padding: 10px;
+
+        display: grid;
+        place-items: center;
+       
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 /*480px and down*/
 @media (max-width: 480px) {
+    .hero-text {
 
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image1 {
+        height: 300px;
+        width: 150px;
+        padding: 10px;
+
+        display: grid;
+        place-items: center;
+       
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
-
-
