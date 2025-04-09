@@ -27,7 +27,6 @@ body {
 
 .container {
     width: min(100% - 30px, 1080px);
-    padding: 0 15px;
     margin-inline: auto;
 }
 
