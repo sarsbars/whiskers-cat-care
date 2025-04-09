@@ -244,6 +244,7 @@ section:nth-of-type(2 ) {
 }
 .contact-right {
     align-items: center;
+    width: 100%;
 }
 
 /* - - - -  - - - - - - - */
@@ -254,7 +255,7 @@ section:nth-of-type(2 ) {
     text-align: center;
     margin-bottom: 50px;
     flex-direction: column;
-    width : 500px;
+    width : 100%;
   }
   
   .contact-me h3 {
@@ -382,7 +383,7 @@ textarea {
     margin: 0;
     flex: 1;
     width: 100%; 
-    max-width: 600px;
+    /* max-width: 600px; */
     height: 450px;
 }
 
@@ -531,5 +532,9 @@ footer {
         p {
             font-size: 1.6rem;
         }
+    }
+
+    .contact-container {
+        flex-direction: column;
     }
 }
