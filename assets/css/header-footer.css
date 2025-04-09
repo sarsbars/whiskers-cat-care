@@ -7,6 +7,15 @@ header {
     background: var(--background);
     margin: auto;
   }
+
+.hamburger {
+    font-size: 24px;
+    color: #000;
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+}
   
   .title {
     height: 56px;
@@ -118,3 +127,36 @@ footer {
         }
     }
   }
+
+
+/* --------------------media-queries--------------- */
+
+/*768px and down*/
+@media (max-width: 768px) {
+    /*for the header*/
+    nav {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+
+  .search-bar {
+      display: none;
+  }
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+  /*for the header*/
+  nav {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+
+  .search-bar {
+      display: none;
+  }
+}
