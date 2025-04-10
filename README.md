@@ -6,9 +6,11 @@ Automation in Software Development.
 
 ### Authors
 
-Sarah Mitchell - team leader, editor, worked on header, footer, contact-us section
-Ashedzi Solomon - hero-banner, about-section, details page, responsiveness
-Xiyu Zhou - services
+-Sarah Mitchell - team leader, editor, worked on header, footer, contact-us section
+
+-Ashedzi Solomon - hero-banner, about-section, details page, responsiveness
+
+-Xiyu Zhou - services
 
 ![Example of Website](./assets/img/example.png)
 
