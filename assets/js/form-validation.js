@@ -2,11 +2,11 @@
 import * as utils from "./utils.js";
 
 export function contactFormValidation() {
-  const form = utils.select('contactForm');
-  const nameInput = utils.select('name');
-  const emailInput = utils.select('email');
-  const messageInput = utils.select('message');
-  const errorMessageArea = utils.select('errorMessageArea');
+  const form = utils.select('.contact-form');
+  const nameInput = utils.select('.name');
+  const emailInput = utils.select('.email');
+  const messageInput = utils.select('.message');
+  const errorMessageArea = utils.select('.errorMessageArea');
 
   utils.listen('submit', form, function(event) { 
     let isValid = true;

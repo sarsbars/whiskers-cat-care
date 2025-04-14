@@ -15,75 +15,130 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
         <link rel="stylesheet" href="./assets/css/daycare-detail.css" media="all">
         <link rel="stylesheet" href="./assets/css/header-footer.css" media="all">
-        <script src="./assets/js/app.js" type="module"></script>
+        <link rel="stylesheet" href="./assets/css/modal.css" media="all">
+        <script src="./assets/js/detail.js" type="module" defer></script>
     </head>
-  <body>
-    <header>
-      <div class="container flex space-between">
+    <body>
+      <header>
+        <div class="container flex space-between">
           <div class="flex gap-40">
-              <div class="title flex">
-                  <div class="logo"><img src="./assets/img/logo1.png"></div>
+            <div class="title flex">
+              <div class="logo">
+                <img src="./assets/img/logo1.png">
               </div>
-              <nav>
-                  <ul class="nav-list">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#">Grooming</a></li>
-                      <li><a href="#">Training</a></li>
-                      <li><a href="#">Contact us</a></li>
-                  </ul>
-              </nav>
+            </div>
+            <nav>
+              <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Grooming</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a id="loginTrigger"><i class="fas fa-user"></i>  Login</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="flex center search-bar">
-              <input type="text" placeholder="Search">
+            <input class="search" type="text" placeholder="Search">
           </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <section class="flex gap-80 align-center">
+            <div class="daycare-service">
+              <h2>Cat Daycare</h2>
+                <p>
+                  You can trust Whiskers to give your feline friend the love, 
+                  comfort, and care they deserve while you're away. Our cozy, 
+                  cat-friendly space is supervised by experienced staff who 
+                  understand every whisker twitch and tail flick.
+                </p>
+                <p class="bold">
+                  All cats must complete a FREE 2-hour temperament check before 
+                  joining daycare.
+                </p>
+                <button class="primary">Book temperament check</button>
+                <p>
+                  If your cat has already passed their check, simply create an 
+                  account to register for daycare.
+                </p>
+                <button class="secondary">Create account</button>
+              </div>
+              <div class="daycare-prices flex column gap-20">
+                <div>
+                  <h3>Full Day | $40</h3>
+                  <p>Up to 8 hours of play, rest, and personalized attention.</p>
+                  <p>Each additional cat from the same household is $25.</p>
+                </div>
+                <div>
+                  <h3>Half Day | $25</h3>
+                  <p>Up to 4 hours. Perfect for mid-day socialization or naps 
+                    in our window spots.</p>
+                  <p>Additional cats: $18 each.</p>
+                </div>
+                <div>
+                  <h3>Catnap Drop-In | $15</h3>
+                  <p>Roughly 2 hours. Great for short errands or quick care.</p>
+                  <p>Additional cats: $11 each.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <figure>
+            <img src="./assets/img/details-cat.png">
+          </figure>
+        </main>
+        <footer class="transparent-footer flex align">
+          <div class="container flex center">
+            <p>2025 &copy; Whiskers</p>
+          </div>
+        </footer>
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form class="login-form">
+              <h2>Login</h2>
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input 
+                  type="text"  
+                  id="username" 
+                  name="username" 
+                  placeholder="Enter your username" required>
+              </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password" required>
+             </div>
+            <button type="submit">Login</button>
+            <p class="signup-link">
+              Don't have an account? <a href="#">Sign up now</a>
+            </p>
+            <div class="alternative-login">
+              <p>Or login with</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/" 
+                  class="social-link" 
+                  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" 
+                  class="social-link" 
+                  target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://mail.google.com"
+                 class="social-link"
+                 target="_blank">
+                 <i class="fab fa-google"></i>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-  </header>
-    <main>
-      <div class="container">
-        <section class="flex gap-80 align-center">
-          <div class="daycare-service">
-            <h2>Cat Daycare</h2>
-            <p>
-              You can trust Whiskers to give your feline friend the love, comfort, and care they 
-              deserve while you're away. Our cozy, cat-friendly space is supervised by experienced 
-              staff who understand every whisker twitch and tail flick.
-            </p>
-            <p class="bold">
-              All cats must complete a FREE 2-hour temperament check before joining daycare.
-            </p>
-            <button class="primary">Book temperament check</button>
-            <p>
-              If your cat has already passed their check, simply create an account to register for daycare.
-            </p>
-            <button class="secondary">Create account</button>
-          </div>
-          <div class="daycare-prices flex column gap-20">
-            <div>
-              <h3>Full Day | $40</h3>
-              <p>Up to 8 hours of play, rest, and personalized attention.</p>
-              <p>Each additional cat from the same household is $25.</p>
-            </div>
-            <div>
-              <h3>Half Day | $25</h3>
-              <p>Up to 4 hours. Perfect for mid-day socialization or naps in our window spots.</p>
-              <p>Additional cats: $18 each.</p>
-            </div>
-            <div>
-              <h3>Catnap Drop-In | $15</h3>
-              <p>Roughly 2 hours. Great for short errands or quick care.</p>
-              <p>Additional cats: $11 each.</p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <figure>
-        <img src="./assets/img/details-cat.png">
-      </figure>
-    </main>
-  </body>
-  <footer class="transparent-footer flex align">
-    <div class="container flex center">
-        <p>2025 &copy; Whiskers</p>
-    </div>
-</footer>
+    </body>
 </html>

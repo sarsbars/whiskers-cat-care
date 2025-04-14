@@ -10,7 +10,7 @@ Automation in Software Development.
 
 -Ashedzi Solomon - hero-banner, about-section, details page, responsiveness
 
--Xiyu Zhou - services, login modal
+-Xiyu Zhou - services, login modal 
 
 ![Example of Website](./assets/img/example.png)
 
