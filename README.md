@@ -1,10 +1,10 @@
-## Whiskers
+## Whiskers 🐱
 
 This is the website for Whiskers Cat Care, a daycare, boarding and grooming 
 facility for all kinds of felines! This was the final project for Tools and 
 Automation in Software Development. 
 
-### Authors
+### Authors 🐱
 
 -Sarah Mitchell - team leader, editor, worked on header, footer, contact-us section
 
@@ -14,10 +14,12 @@ Automation in Software Development.
 
 ![Example of Website](./assets/img/example.png)
 
-### Examples
+### Examples 🐱
+
 Some examples we used were [Belly Rub Club](https://www.thebellyrubclub.ca/), and [Cats Cradle](http://www.petsperfectpaws.com/Cats-Cradle.html)
 
-### Project Features
+### Project Features 🐱
+
 - Responsive Design: The layout is optimized for different screen sizes (desktop, tablet, mobile) to ensure accessibility and usability across devices.    
 
 - GitHub Pages Hosting: The site is hosted on GitHub Pages, indicating it is a static site without server-side processing.  
@@ -29,7 +31,8 @@ Some examples we used were [Belly Rub Club](https://www.thebellyrubclub.ca/), an
 - Image Gallery (Former Clients): A section showcasing "Purrfectly Pleased Clients" with a gallery of cat images demonstrates positive customer experiences and builds trust.
 
 
-### Technologies I Used
+### Technologies We Used 🐱
+
 - HTML5
 - CSS3
 - JS
